@@ -203,219 +203,189 @@
   </div>
 </section>
 
-<!-- PORTFOLIO SECTION -->
-<section id="portfolio" style="text-align: center; padding: 100px 0;">
-  <div class="wrap">
-    <p class="label" style="text-transform: uppercase; letter-spacing: 2px;">Explore My Work</p>
-    <h1 class="h1" style="font-size: 3.5rem; margin-bottom: 10px;">Portfolio <span>Showcase</span></h1>
-    <p style="max-width: 700px; margin: 0 auto 50px; color: #888; line-height: 1.6;">
-      Explore my journey through cybersecurity projects, certifications, CTF challenges, and
-       technical learning. Each project represents a step in developing my practical skills and understanding 
-       of cybersecurity and digital forensics.
-    </p>
-    
-    <style>
-      .portfolio-cards {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-        margin-top: 40px;
-      }
-      .pf-card {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-        padding: 40px 30px;
-        width: 320px;
-        text-decoration: none;
-        transition: all 0.4s ease;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .pf-card:hover {
-        transform: translateY(-10px);
-        background: rgba(255, 255, 255, 0.06);
-        border-color: var(--accent); /* Uses your theme color */
-        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-      }
-      .pf-img {
-        width: 100px; /* Big icons like the first image */
-        height: 100px;
-        margin-bottom: 25px;
-        object-fit: contain;
-        filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
-      }
-      .pf-title {
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 15px;
-      }
-      .pf-desc {
-        font-size: 0.95rem;
-        color: #aaa;
-        line-height: 1.5;
-      }
-    </style>
-
-    <!-- 3 HORIZONTAL CARDS -->
-    <div class="portfolio-cards">
-      
-      <!-- Card 1: Projects -->
-      <a class="pf-card" href="#projects">
-        <img src="project.jpg" alt="Projects" class="pf-img">
-        <div class="pf-title">Projects</div>
-        <div class="pf-desc">Cybersecurity tools, programming projects,
-           networking exercises, and practical experiments I've built while developing my technical skills.</div>
-      </a>
-
-      <!-- Card 2: Certificates -->
-      <a class="pf-card" href="#certificates">
-        <img src="certificate.jpg" alt="Certificates" class="pf-img">
-        <div class="pf-title">Certificates</div>
-        <div class="pf-desc">Certifications and achievements from cybersecurity, networking, programming, 
-          and technical learning.</div>
-      </a>
-
-      <!-- Card 3: Tech Stack -->
-      <a class="pf-card" href="#tech-stack">
-        <img src="techstack.jpg" alt="Tech Stack" class="pf-img">
-        <div class="pf-title">Tech Stack</div>
-        <div class="pf-desc">The languages, tools, and platforms I use while learning and practicing cybersecurity, 
-          digital forensics, networking, and ethical hacking.</div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-    <!-- PROJECTS SECTION -->
+<!-- PROJECTS SECTION -->
 <div id="projects" style="scroll-margin-top:80px; width: 100%; padding-left: 25px;">
-  <!-- Added 25px padding-left to give that '2 to 3 spaces' look without changing the layout -->
-  
+
   <p class="label">What I've Built</p>
   <h2 class="h2">My <span>Projects</span></h2>
-  
+
   <div class="proj-grid">
-    
+
+    <!-- EliteEdge Student Management System -->
     <div class="proj-card">
       <div class="proj-thumb">
-        <img src="rms.png" alt="Restaurant Management System" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>💼</div>'">
-        <span class="proj-status" style="background:rgba(20,184,166,.85)">Live</span>
+        <img src="images/eliteedge.jpg"
+             alt="EliteEdge Student Management System"
+             onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🎓</div>'">
+        <span class="proj-status" style="background:rgba(20,184,166,.85)">Completed</span>
       </div>
+
       <div class="proj-body">
-        <div class="proj-title">Restaurant Management System</div>
-        <div class="proj-desc">C++ console-based application managing menu display, table reservation, order processing, billing, and feedback. Supports admin/user roles with file handling. Now with a live web version!</div>
-        <div class="proj-tags"><span class="tag">C</span><span class="tag">C++</span><span class="tag">HTML/CSS/JS</span><span class="tag teal">Web Version</span></div>
+        <div class="proj-title">EliteEdge Student Management System</div>
+
+        <div class="proj-desc">
+          A full-stack student management system designed to manage student
+          information through separate student and admin dashboards with
+          secure authentication and database management.
+        </div>
+
+        <div class="proj-tags">
+          <span class="tag">React</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">JWT</span>
+          <span class="tag teal">Full Stack</span>
+        </div>
+
         <div class="proj-actions">
-          <a class="proj-btn gh" href="https://github.com/Dilishaa108/Restaurant-Management-System" target="_blank">
-            <svg class="ico" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+          <a class="proj-btn gh"
+             href="https://github.com/anishpatel-cyber/EliteEdge-Student-Management"
+             target="_blank">
+
+            <svg class="ico" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/>
+            </svg>
             GitHub
-          </a>
-          <a class="proj-btn demo" href="https://Dilishaa108.github.io/Restaurant-Management-System/" target="_blank">
-            <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-            Live Demo
           </a>
         </div>
       </div>
     </div>
-  
-  <div class="proj-card">
-  
-  <div class="proj-thumb">
-  
-  <img src="sss.png" alt="Sanket Sikshya " onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🌺</div>'">
-  
-  <span class="proj-status" style="background:rgba(20,184,166,.85)">Live</span>
-  </div>
-  <div class="proj-body">
-  <div class="proj-title">Sanket Sikshya</div>
-  <div class="proj-desc"> SanketSiksha is Nepal's first free platform to learn Braille and Nepali Sign Language , built for families, teachers, and every community that deserves to connect. </div>
-  <div class="proj-tags"><span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">CSS</span><span class="tag teal">Incomplete</span></div>
-  <div class="proj-actions">
-  <a class="proj-btn gh" href="#" target="_blank">
-  <svg class="ico" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
-  GitHub
-  </a>
-  <a class="proj-btn demo" href="https://sanketsikshya.netlify.app/" target="_blank">
-  <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-  Live Demo
-  </a>
-  </div>
-  </div>
-  </div>
-  <div class="proj-card">
-  <div class="proj-thumb">
-  <img src="isp.png" alt="Iris Species Prediction" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🌺</div>'">
-  <span class="proj-status" style="background:rgba(20,184,166,.85)">Live</span>
-  </div>
-  <div class="proj-body">
-  <div class="proj-title">Iris Species Prediction</div>
-  <div class="proj-desc">ML model to classify Iris flower species. Trained on UCI dataset with 96% accuracy. Predict species using sepal/petal measurements!</div>
-  <div class="proj-tags"><span class="tag">Python</span><span class="tag">Jupyter</span><span class="tag">ML</span><span class="tag teal">AI model</span></div>
-  <div class="proj-actions">
-  <a class="proj-btn gh" href="#" target="_blank">
-  <svg class="ico" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
-  GitHub
-  </a>
-   <a class="proj-btn demo" href="https://Dilishaa108.github.io/Restaurant-Management-System/iris-predictor.html" target="_blank">
-  <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-  Live Demo
-   </a>
-  </div>
-  </div>
-  </div>
-  <div class="proj-card">
-  <div class="proj-thumb">
-  <img src="bl.png" alt="Bound-less" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🛒</div>'">
-  </div>
-  <div class="proj-body">
-  <div class="proj-title">Bound-Less</div>
-   <div class="proj-desc">WordPress-based E-Commerce Website for online shopping.</div>
-   <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">WordPress</span></div>
-   <div class="proj-actions">
-  <a class="proj-btn gh" href="#" target="_blank">
-  <svg class="ico" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
-  GitHub
-  </a>
-  <a class="proj-btn demo" href="#" target="_blank">
-  <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-  Live Demo
-  </a>
-  </div>
-  </div>
-  </div>
-  <!-- Wanderer Trip Planner Pro Project Card -->
-  <div class="proj-card">
-    <div class="proj-thumb">
-      <!-- Using a placeholder icon since I don't have your specific screenshot -->
-      <img src="wanderer.png" alt="Wanderer Trip Planner Pro" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🏔️</div>'">
-      <span class="proj-status" style="background:rgba(187, 134, 252, 0.85)">AWS Project</span>
-    </div>
-    <div class="proj-body">
-      <div class="proj-title">Wanderer Trip Planner Pro</div>
-      <div class="proj-desc">An AI-powered travel assistant built on AWS PartyRock. It generates optimized trekking itineraries for solo travelers based on fitness levels and regional interests.</div>
-      <div class="proj-tags">
-        <span class="tag">AI/ML</span>
-        <span class="tag">AWS PartyRock</span>
-        <span class="tag">LLM</span>
-        <span class="tag teal">Prompt Engineering</span>
-      </div>
-      <div class="proj-actions">
-        <!-- Action button to launch the live app -->
-        <a class="proj-btn demo" href="https://partyrock.aws/u/deluluuu/iFWOw5iV7/Wanderer-Trip-Planner-Pro" target="_blank" style="width: 100%; justify-content: center;">
-          <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-          Launch Live Demo
-        </a>
-      </div>
-    </div>
-  </div>
-  </div>
-  
-  </div>
 
+
+    <!-- Technova Website -->
+    <div class="proj-card">
+      <div class="proj-thumb">
+        <img src="images/technova.png"
+             alt="Technova Website"
+             onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🌐</div>'">
+        <span class="proj-status" style="background:rgba(20,184,166,.85)">Completed</span>
+      </div>
+
+      <div class="proj-body">
+        <div class="proj-title">Technova Website</div>
+
+        <div class="proj-desc">
+          A responsive technology-focused website developed to present
+          information through a modern interface with structured content,
+          responsive layouts, and interactive web elements.
+        </div>
+
+        <div class="proj-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag teal">Web Development</span>
+        </div>
+
+        <div class="proj-actions">
+          <a class="proj-btn gh"
+             href="https://github.com/anishpatel-cyber/itassessment2026"
+             target="_blank">
+
+            <svg class="ico" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/>
+            </svg>
+            GitHub
+          </a>
+           <!-- Action button to launch the live app -->
+<a class="proj-btn demo"
+   href="https://anishpatel-cyber.github.io/itassessment2026/"
+   target="_blank"
+   style="width: 50%; justify-content: center;">
+  <svg class="ico" viewBox="0 0 24 24" style="fill:white">
+    <path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+  </svg>
+  Live Demo
+</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Secure Coding Review -->
+    <div class="proj-card">
+      <div class="proj-thumb">
+        <img src="images/securecoding.jpg"
+             alt="Secure Coding Review"
+             onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🔐</div>'">
+        <span class="proj-status" style="background:rgba(20,184,166,.85)">Completed</span>
+      </div>
+
+      <div class="proj-body">
+        <div class="proj-title">Secure Coding Review</div>
+
+        <div class="proj-desc">
+          A cybersecurity project focused on reviewing a Flask-based web
+          application, identifying security vulnerabilities, and implementing
+          secure coding practices to improve application security.
+        </div>
+
+        <div class="proj-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Secure Coding</span>
+          <span class="tag teal">Web Security</span>
+        </div>
+
+        <div class="proj-actions">
+          <a class="proj-btn gh"
+             href="https://github.com/anishpatel-cyber/SecureCodingReview"
+             target="_blank">
+
+            <svg class="ico" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Basic Network Sniffer -->
+    <div class="proj-card">
+      <div class="proj-thumb">
+        <img src="images/network-sniffer.jpg"
+             alt="Basic Network Sniffer"
+             onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>📡</div>'">
+        <span class="proj-status" style="background:rgba(20,184,166,.85)">Completed</span>
+      </div>
+
+      <div class="proj-body">
+        <div class="proj-title">Basic Network Sniffer</div>
+
+        <div class="proj-desc">
+          A Python-based network security project designed to capture and
+          analyze network packets, helping understand network traffic,
+          protocols, and basic packet-level security concepts.
+        </div>
+
+        <div class="proj-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Packet Analysis</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag teal">Network Security</span>
+        </div>
+
+        <div class="proj-actions">
+          <a class="proj-btn gh"
+             href="https://github.com/anishpatel-cyber/BasicNetworkSniffer"
+             target="_blank">
+
+            <svg class="ico" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72.1 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
     <!-- CERTIFICATES SECTION — 3 categories: Technical, Leadership, Sports -->
    <div id="certificates" style="scroll-margin-top:80px; width: 100%; padding-left: 25px;">
         <!-- Added 25px padding-left to give that '2 to 3 spaces' look without changing the layout -->
