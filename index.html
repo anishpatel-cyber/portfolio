@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>ANISH KUMAR PATEL Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV — 4 links only -->
+<nav>
+  <div class="wrap nav-i">
+    <a class="logo" href="#hero">Anish</a>
+    <ul class="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="ham" onclick="toggleMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mob" id="mob">
+  <a href="#about" onclick="toggleMob()">About</a>
+  <a href="#journey" onclick="toggleMob()">Journey</a>
+  <a href="#portfolio" onclick="toggleMob()">Portfolio</a>
+  <a href="#contact" onclick="toggleMob()">Contact</a>
+</div>
+
+<!-- HERO — text LEFT, image RIGHT -->
+<section id="hero">
+  <div class="hero-dots"></div><div class="hero-orb"></div><div class="hero-orb2"></div>
+  <div class="wrap">
+    <div class="hero-wrap">
+      
+    
+      <!-- LEFT: Text content -->
+      <div class="hero-left">
+        <div class="eyebrow"><span class="wave">👋</span> Anish</div>
+        <h1 class="hero-name">
+          <span class="n2">Anish Kumar Patel</span>
+        </h1>
+        <p class="hero-role">I'm a <span id="typed"></span><span class="cur">|</span></p>
+        <p class="hero-bio">BSc (Hons) Cybersecurity & Digital Forensics student at The British College, Kathmandu, 
+          focused on building practical skills in cybersecurity, digital forensics, networking, and ethical hacking. 
+          I enjoy learning through hands-on labs, CTF challenges, and security-focused projects.</p>
+        <div class="hero-btns">
+          <a class="btn btn-solid" href="#contact">Get In Touch</a>
+          <a class="btn btn-ghost" href="Anish_Kumar_Patel_CV.pdf" target="_blank" download>
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12 16l-5-5 1.4-1.4L11 13.2V4h2v9.2l2.6-2.6L17 11l-5 5zm-7 4v-2h14v2H5z"/></svg>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-soc">
+          <a class="soc-pill" href="https://github.com/anishpatel.cyber" target="_blank">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a class="soc-pill" href="https://www.linkedin.com/in/anish-kumar-patel-234347382//" target="_blank">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM9 17H6.5v-7H9v7zm-1.25-8.27a1.38 1.38 0 110-2.76 1.38 1.38 0 010 2.76zM18 17h-2.5v-3.4c0-2.03-2.5-1.88-2.5 0V17H10.5v-7H13v1.1c1.04-1.93 4.5-2.07 4.5 1.84V17z"/></svg>
+            LinkedIn
+          </a>
+          <a class="soc-pill" href="anishkpatel@proton.me">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Profile card -->
+      <div class="hero-card">
+        <div class="photo-ring">
+          <div class="photo-inner">
+            <img src="images/profile.jpeg" alt="Anish Kumar Patel" onerror="this.style.display='none';this.parentElement.innerHTML='👤'">
+          </div>
+        </div>
+        <div class="hc-name">Anish Kumar Patel</div>
+        <div class="hc-role">Cyber Security and Digital Forensics Student</div>
+
+        <!-- HORIZONTAL STATS ROW -->
+        <div class="hc-stats">
+          <div class="hcs"><div class="hcs-n">5+</div><div class="hcs-l">Projects</div></div>
+          <div class="hcs"><div class="hcs-n">10+</div><div class="hcs-l">Certificates</div></div>
+          <div class="hcs"><div class="hcs-n">1+</div><div class="hcs-l">CTFs</div></div>
+        </div>
+        <div class="avail"><span class="avail-dot"></span> Available to Learn & Collaborate</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="img-wrap">
+        <div class="img-frame">
+          <img src="images/profile.jpeg" alt="Anish Kumar Patel" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <div class="img-ph-icon" style="display:none">📷</div>
+        </div>
+       <!-- <div class="img-badge"><b>3+</b>Years<br>Learning</div> -->
+      </div>
+      <div class="fade-up">
+        <p class="label">About Me</p>
+        <h2 class="h2">Who <span>I Am</span></h2>
+        <p>Hi! I'm <strong style="color:var(--text)">Anish Kumar Patel</strong>,a BSc (Hons) Cybersecurity & Digital Forensics
+           student at The British College, Kathmandu. I'm building my foundation in cybersecurity through hands-on 
+           learning, practical projects, networking labs, and Capture The Flag challenges.
+           </p> <br>
+<p>I'm particularly interested in network security, digital forensics, ethical hacking, and incident response. 
+  I enjoy exploring Linux, cybersecurity tools, and security concepts while continuously improving my practical skills. </p>
+<br>
+<p>Outside coursework, I spend time working through platforms such as TryHackMe, picoCTF, participating in CTF challenges, and 
+  building projects that help me understand cybersecurity concepts in practice. </p>
+<br>
+<p>I'm currently focused on growing my technical skills and looking for opportunities to learn, collaborate, and 
+  gain real-world cybersecurity experience.</p>
+        <div class="about-kv">
+          <div class="kv"><div class="kv-k">Location</div><div class="kv-v">Kathmandu, Nepal</div></div>
+          <div class="kv"><div class="kv-k">Degree</div><div class="kv-v">Cyber Security and Digital Forensics</div></div>
+          <div class="kv"><div class="kv-k">College</div><div class="kv-v">The British College, Kathmandu</div></div>
+          <div class="kv"><div class="kv-k">Focus</div><div class="kv-v">Cybersecurity · Digital Forensics · Networking · Ethical Hacking</div></div>
+        </div>
+
+        <!-- HORIZONTAL STATS ROW -->
+        <div class="astats">
+          <div class="ast"><div class="ast-n">5+</div><div class="ast-l">Projects</div></div>
+          <div class="ast"><div class="ast-n">10+</div><div class="ast-l">Certificates</div></div>
+          <div class="ast"><div class="ast-n">1+</div><div class="ast-l">CTFs</div></div>
+        </div>
+        <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-solid" href="#portfolio">View Portfolio</a>
+          <a class="btn btn-ghost" href="Anish_Kumar_Patel_CV.pdf" download target="_blank">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12 16l-5-5 1.4-1.4L11 13.2V4h2v9.2l2.6-2.6L17 11l-5 5zm-7 4v-2h14v2H5z"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / EDUCATION -->
+<section id="journey">
+  <div class="wrap">
+    <p class="label">Background</p>
+    <h2 class="h2">Experience & <span>Education</span></h2>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('exp-tab',this)">Experience</button>
+      <button class="tab-btn" onclick="switchTab('edu-tab',this)">Education</button>
+    </div>
+
+    <div id="exp-tab" class="tab-content active">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Present</div>
+          <div class="tl-role">Cybersecurity Projects & Practical Learning</div>
+          <div class="tl-org">Self-Directed Learning · Kathmandu, Nepal</div>
+          <div class="tl-desc">Developing practical cybersecurity skills through hands-on labs, CTF challenges, networking 
+            exercises, and security-focused projects.Experience includes working with Linux, Wireshark, Scapy, 
+            packet analysis, and introductory digital forensics.</div>
+          <div class="tl-tags"><span class="tag">Linux</span><span class="tag">Networking</span><span class="tag">Wireshark</span>
+          <span class="tag">Scapy</span><span class="tag">CTFs</span><span class="tag">Digital Forensics</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="edu-tab" class="tab-content">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2025 - Present</div>
+          <div class="tl-role">BSc (Hons) Cybersecurity & Digital Forensics</div>
+          <div class="tl-org">The British College, Kathmandu, Nepal</div>
+          <div class="tl-desc">Building foundations across cybersecurity, digital forensics, networking, 
+            ethical hacking, and related computing disciplines.</div>
+          <div class="tl-tags"><span class="tag">CS & DF</span><span class="tag teal">Ongoing</span></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2023 - 2025</div>
+          <div class="tl-role">Higher Secondary Education (+2)</div>
+          <div class="tl-org">Triton SS and College, Koteshwor, Kathmandu</div>
+          <div class="tl-desc">Completed higher secondary education with a focus on science and computing-related subjects.</div>
+          <div class="tl-tags"><span class="tag">+2 Science</span><span class="tag teal">Completed</span></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Passed 2023</div>
+          <div class="tl-role">Secondary Education Examination (SEE)</div>
+          <div class="tl-org">Sagun Shiksha Awasiya Vidhalaya, Sarlahi, Nepal</div>
+          <div class="tl-desc">Completed Secondary Education Examination (SEE)</div>
+          <div class="tl-tags"><span class="tag">SEE</span><span class="tag teal">Completed</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio" style="text-align: center; padding: 100px 0;">
+  <div class="wrap">
+    <p class="label" style="text-transform: uppercase; letter-spacing: 2px;">Explore My Work</p>
+    <h1 class="h1" style="font-size: 3.5rem; margin-bottom: 10px;">Portfolio <span>Showcase</span></h1>
+    <p style="max-width: 700px; margin: 0 auto 50px; color: #888; line-height: 1.6;">
+      Explore my journey through cybersecurity projects, certifications, CTF challenges, and
+       technical learning. Each project represents a step in developing my practical skills and understanding 
+       of cybersecurity and digital forensics.
+    </p>
+    
+    <style>
+      .portfolio-cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+      .pf-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 40px 30px;
+        width: 320px;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .pf-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.06);
+        border-color: var(--accent); /* Uses your theme color */
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      }
+      .pf-img {
+        width: 100px; /* Big icons like the first image */
+        height: 100px;
+        margin-bottom: 25px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
+      }
+      .pf-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 15px;
+      }
+      .pf-desc {
+        font-size: 0.95rem;
+        color: #aaa;
+        line-height: 1.5;
+      }
+    </style>
+
+    <!-- 3 HORIZONTAL CARDS -->
+    <div class="portfolio-cards">
+      
+      <!-- Card 1: Projects -->
+      <a class="pf-card" href="#projects">
+        <img src="project.jpg" alt="Projects" class="pf-img">
+        <div class="pf-title">Projects</div>
+        <div class="pf-desc">Cybersecurity tools, programming projects,
+           networking exercises, and practical experiments I've built while developing my technical skills.</div>
+      </a>
+
+      <!-- Card 2: Certificates -->
+      <a class="pf-card" href="#certificates">
+        <img src="certificate.jpg" alt="Certificates" class="pf-img">
+        <div class="pf-title">Certificates</div>
+        <div class="pf-desc">Certifications and achievements from cybersecurity, networking, programming, 
+          and technical learning.</div>
+      </a>
+
+      <!-- Card 3: Tech Stack -->
+      <a class="pf-card" href="#tech-stack">
+        <img src="techstack.jpg" alt="Tech Stack" class="pf-img">
+        <div class="pf-title">Tech Stack</div>
+        <div class="pf-desc">The languages, tools, and platforms I use while learning and practicing cybersecurity, 
+          digital forensics, networking, and ethical hacking.</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+    <!-- PROJECTS SECTION -->
+<div id="projects" style="scroll-margin-top:80px; width: 100%; padding-left: 25px;">
+  <!-- Added 25px padding-left to give that '2 to 3 spaces' look without changing the layout -->
+  
+  <p class="label">What I've Built</p>
+  <h2 class="h2">My <span>Projects</span></h2>
+  
+  <div class="proj-grid">
+    
+    <div class="proj-card">
+      <div class="proj-thumb">
+        <img src="rms.png" alt="Restaurant Management System" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>💼</div>'">
+        <span class="proj-status" style="background:rgba(20,184,166,.85)">Live</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Restaurant Management System</div>
+        <div class="proj-desc">C++ console-based application managing menu display, table reservation, order processing, billing, and feedback. Supports admin/user roles with file handling. Now with a live web version!</div>
+        <div class="proj-tags"><span class="tag">C</span><span class="tag">C++</span><span class="tag">HTML/CSS/JS</span><span class="tag teal">Web Version</span></div>
+        <div class="proj-actions">
+          <a class="proj-btn gh" href="https://github.com/Dilishaa108/Restaurant-Management-System" target="_blank">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a class="proj-btn demo" href="https://Dilishaa108.github.io/Restaurant-Management-System/" target="_blank">
+            <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  
+  <div class="proj-card">
+  
+  <div class="proj-thumb">
+  
+  <img src="sss.png" alt="Sanket Sikshya " onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🌺</div>'">
+  
+  <span class="proj-status" style="background:rgba(20,184,166,.85)">Live</span>
+  </div>
+  <div class="proj-body">
+  <div class="proj-title">Sanket Sikshya</div>
+  <div class="proj-desc"> SanketSiksha is Nepal's first free platform to learn Braille and Nepali Sign Language , built for families, teachers, and every community that deserves to connect. </div>
+  <div class="proj-tags"><span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">CSS</span><span class="tag teal">Incomplete</span></div>
+  <div class="proj-actions">
+  <a class="proj-btn gh" href="#" target="_blank">
+  <svg class="ico" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+  GitHub
+  </a>
+  <a class="proj-btn demo" href="https://sanketsikshya.netlify.app/" target="_blank">
+  <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+  Live Demo
+  </a>
+  </div>
+  </div>
+  </div>
+  <div class="proj-card">
+  <div class="proj-thumb">
+  <img src="isp.png" alt="Iris Species Prediction" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🌺</div>'">
+  <span class="proj-status" style="background:rgba(20,184,166,.85)">Live</span>
+  </div>
+  <div class="proj-body">
+  <div class="proj-title">Iris Species Prediction</div>
+  <div class="proj-desc">ML model to classify Iris flower species. Trained on UCI dataset with 96% accuracy. Predict species using sepal/petal measurements!</div>
+  <div class="proj-tags"><span class="tag">Python</span><span class="tag">Jupyter</span><span class="tag">ML</span><span class="tag teal">AI model</span></div>
+  <div class="proj-actions">
+  <a class="proj-btn gh" href="#" target="_blank">
+  <svg class="ico" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+  GitHub
+  </a>
+   <a class="proj-btn demo" href="https://Dilishaa108.github.io/Restaurant-Management-System/iris-predictor.html" target="_blank">
+  <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+  Live Demo
+   </a>
+  </div>
+  </div>
+  </div>
+  <div class="proj-card">
+  <div class="proj-thumb">
+  <img src="bl.png" alt="Bound-less" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🛒</div>'">
+  </div>
+  <div class="proj-body">
+  <div class="proj-title">Bound-Less</div>
+   <div class="proj-desc">WordPress-based E-Commerce Website for online shopping.</div>
+   <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">WordPress</span></div>
+   <div class="proj-actions">
+  <a class="proj-btn gh" href="#" target="_blank">
+  <svg class="ico" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+  GitHub
+  </a>
+  <a class="proj-btn demo" href="#" target="_blank">
+  <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+  Live Demo
+  </a>
+  </div>
+  </div>
+  </div>
+  <!-- Wanderer Trip Planner Pro Project Card -->
+  <div class="proj-card">
+    <div class="proj-thumb">
+      <!-- Using a placeholder icon since I don't have your specific screenshot -->
+      <img src="wanderer.png" alt="Wanderer Trip Planner Pro" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🏔️</div>'">
+      <span class="proj-status" style="background:rgba(187, 134, 252, 0.85)">AWS Project</span>
+    </div>
+    <div class="proj-body">
+      <div class="proj-title">Wanderer Trip Planner Pro</div>
+      <div class="proj-desc">An AI-powered travel assistant built on AWS PartyRock. It generates optimized trekking itineraries for solo travelers based on fitness levels and regional interests.</div>
+      <div class="proj-tags">
+        <span class="tag">AI/ML</span>
+        <span class="tag">AWS PartyRock</span>
+        <span class="tag">LLM</span>
+        <span class="tag teal">Prompt Engineering</span>
+      </div>
+      <div class="proj-actions">
+        <!-- Action button to launch the live app -->
+        <a class="proj-btn demo" href="https://partyrock.aws/u/deluluuu/iFWOw5iV7/Wanderer-Trip-Planner-Pro" target="_blank" style="width: 100%; justify-content: center;">
+          <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          Launch Live Demo
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  </div>
+
+    <!-- CERTIFICATES SECTION — 3 categories: Technical, Leadership, Sports -->
+   <div id="certificates" style="scroll-margin-top:80px; width: 100%; padding-left: 25px;">
+        <!-- Added 25px padding-left to give that '2 to 3 spaces' look without changing the layout -->
+        
+        <p class="label">Achievements</p>
+        <h2 class="h2">My <span>Certificatess</span></h2>
+      
+      <!-- 3 CATEGORY TABS -->
+      <div class="cert-tabs">
+        <button class="cert-tab-btn active" onclick="switchCertTab('cert-tech',this)">🔧 Technical</button>
+        <button class="cert-tab-btn" onclick="switchCertTab('cert-lead',this)">👥 Leadership</button>
+        <button class="cert-tab-btn" onclick="switchCertTab('cert-sport',this)">⚽ Sports</button>
+      </div>
+
+      <!-- TECHNICAL CERTIFICATES — images only -->
+<div id="cert-tech" class="cert-tab-content active">
+  <div class="cert-img-grid">
+
+    <!-- 1. Certificate t -->
+    <div class="cert-img-card" onclick="openCertModal('t.jpg')">
+      <img src="t.jpg" alt="Technical Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>🏅</div>'">
+    </div>
+
+    <!-- 2. Certificate t1 -->
+    <div class="cert-img-card" onclick="openCertModal('t1.jpg')">
+      <img src="t1.jpg" alt="Technical Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>🏅</div>'">
+    </div>
+
+    <!-- 3. Certificate t2 -->
+    <div class="cert-img-card" onclick="openCertModal('t2.jpg')">
+      <img src="t2.jpg" alt="Technical Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>🏅</div>'">
+    </div>
+
+    <!-- 4. Certificate t3 -->
+    <div class="cert-img-card" onclick="openCertModal('t3.jpg')">
+      <img src="t3.jpg" alt="Technical Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>🏅</div>'">
+    </div>
+
+    <!-- 5. Certificate t4 -->
+    <div class="cert-img-card" onclick="openCertModal('t4.jpg')">
+      <img src="t4.jpg" alt="Technical Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>🏅</div>'">
+    </div>
+
+    <!-- 6. Certificate t5 -->
+    <div class="cert-img-card" onclick="openCertModal('t5.jpg')">
+      <img src="t5.jpg" alt="Technical Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>🏅</div>'">
+    </div>
+
+    <!-- 7. Certificate t6 -->
+    <div class="cert-img-card" onclick="openCertModal('t6.jpg')">
+      <img src="t6.jpg" alt="Technical Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>🏅</div>'">
+    </div>
+
+    <!-- 8. Certificate t7 -->
+    <div class="cert-img-card" onclick="openCertModal('t7.jpg')">
+      <img src="t7.jpg" alt="Technical Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>🏅</div>'">
+    </div>
+
+    <!-- 9. Certificate t8 -->
+    <div class="cert-img-card" onclick="openCertModal('t8.jpg')">
+      <img src="t8.jpg" alt="Technical Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>🏅</div>'">
+    </div>
+
+    <div class="cert-img-card" onclick="openCertModal('t9.jpg')">
+      <img src="t9.jpg" alt="Technical Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>🏅</div>'">
+    </div>
+
+  </div>
+</div>
+
+<!-- LEADERSHIP CERTIFICATES -->
+<div id="cert-lead" class="cert-tab-content">
+  <div class="cert-img-grid">
+    
+    <!-- 1. Youth SDG Summit -->
+    <div class="cert-img-card" onclick="openCertModal('l1.jpg')">
+      <img src="l1.jpg" alt="Nepal Youth SDG Summit" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>👥</div>'">
+    </div>
+
+    <!-- 2. Zonal Leadership Training -->
+    <div class="cert-img-card" onclick="openCertModal('l2.jpg')">
+      <img src="l2.jpg" alt="Zonal Leadership Training" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>👥</div>'">
+    </div>
+
+    <!-- 3. Hult Prize Participation -->
+    <div class="cert-img-card" onclick="openCertModal('l3.jpg')">
+      <img src="l3.jpg" alt="Hult Prize Participation" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>👥</div>'">
+    </div>
+
+    <!-- 4. Zonal Executive Appointment -->
+    <div class="cert-img-card" onclick="openCertModal('l4.jpg')">
+      <img src="l4.jpg" alt="Zonal Executive Appointment" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>👥</div>'">
+    </div>
+
+    <!-- 5. Leadership Seminar -->
+    <div class="cert-img-card" onclick="openCertModal('l5.jpg')">
+      <img src="l5.jpg" alt="Leadership Seminar" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>👥</div>'">
+    </div>
+
+    <!-- 6. Interact Membership -->
+    <div class="cert-img-card" onclick="openCertModal('l6.jpg')">
+      <img src="l6.jpg" alt="Interact Membership" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>👥</div>'">
+    </div>
+
+    <!-- 7. Energizing the Youth -->
+    <div class="cert-img-card" onclick="openCertModal('l7.jpg')">
+      <img src="l7.jpg" alt="Energizing the Youth" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>👥</div>'">
+    </div>
+
+    <div class="cert-img-card" onclick="openCertModal('l8.jpg')">
+      <img src="l8.jpg" alt="Interact Membership" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>👥</div>'">
+    </div>
+
+    <div class="cert-img-card" onclick="openCertModal('l9.jpg')">
+      <img src="l9.jpg" alt="Interact Membership" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>👥</div>'">
+    </div>
+     <div class="cert-img-card" onclick="openCertModal('l10.jpg')">
+      <img src="l10.jpg" alt="Interact Membership" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>👥</div>'">
+    </div>
+  </div>
+</div>
+<!-- SPORTS CERTIFICATES -->
+<div id="cert-sport" class="cert-tab-content">
+  <div class="cert-img-grid">
+
+    <!-- 1. Sports Certificate s1 -->
+    <div class="cert-img-card" onclick="openCertModal('s1.jpg')">
+      <img src="s1.jpg" alt="Sports Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>⚽</div>'">
+    </div>
+
+    <!-- 2. Sports Certificate s2 -->
+    <div class="cert-img-card" onclick="openCertModal('s2.jpg')">
+      <img src="s2.jpg" alt="Sports Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>⚽</div>'">
+    </div>
+
+    <!-- 3. Sports Certificate s3 -->
+    <div class="cert-img-card" onclick="openCertModal('s3.jpg')">
+      <img src="s3.jpg" alt="Sports Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>⚽</div>'">
+    </div>
+
+    <!-- 4. Sports Certificate s4 -->
+    <div class="cert-img-card" onclick="openCertModal('s4.jpg')">
+      <img src="s4.jpg" alt="Sports Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>⚽</div>'">
+    </div>
+    <div class="cert-img-card" onclick="openCertModal('s5.jpg')">
+      <img src="s5.jpg" alt="Sports Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>⚽</div>'">
+    </div>
+    <div class="cert-img-card" onclick="openCertModal('s6.jpg')">
+      <img src="s6.jpg" alt="Sports Certificate" onerror="this.parentElement.innerHTML='<div class=cert-img-ph>⚽</div>'">
+    </div>
+    
+
+  </div>
+</div>
+
+<!-- TECH STACK SECTION -->
+<section id="tech-stack" style="scroll-margin-top:80px; margin-top:100px; width: 100%; padding: 0 5% 100px 5%; background: transparent;">
+  <!-- Added style to .wrap to prevent it from centering or restricting width -->
+  <div class="wrap" style="max-width: 100%; margin: 0; padding: 0;">
+    
+    <p class="label" style="padding-left: 0; margin-left: 0; text-align: left; width: 100%;">What I Use</p>
+    <h2 class="h2" style="padding-left: 0; margin-left: 0; text-align: left; width: 100%;">Tech <span>Stack</span></h2>
+
+    <style>
+      /* Target the specific headers to ensure no inherited centering */
+      #tech-stack .label, #tech-stack .h2 {
+        display: block;
+        width: 100%;
+      }
+
+      .skills-cats {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 40px;
+        padding-left: 0; /* Aligning with the text above */
+      }
+
+      .scat-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: var(--accent);
+        border-left: 4px solid var(--accent);
+        padding-left: 15px;
+        text-align: left;
+      }
+
+      .skill-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: flex-start;
+      }
+
+      .sic {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 25px 15px;
+        border-radius: 16px;
+        width: 145px;
+        height: 145px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .sic:hover {
+        transform: scale(1.1);
+        background: rgba(255, 255, 255, 0.08);
+        border-color: var(--accent);
+      }
+
+      .sic i, .sic img {
+        font-size: 3.8rem !important;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .sic span {
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #ccc;
+        margin-bottom: 5px;
+      }
+    </style>
+
+    <div class="skills-cats">
+      <!-- 1. Frontend -->
+      <div class="fade-up">
+        <div class="scat-title">Frontend Development</div>
+        <div class="skill-icons">
+          <div class="sic"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+          <div class="sic"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+          <div class="sic"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+          <div class="sic"><i class="devicon-react-original colored"></i><span>React</span></div>
+        </div>
+      </div>
+
+      <!-- 2. Programming -->
+      <div class="fade-up">
+        <div class="scat-title">Programming & Fundamentals</div>
+        <div class="skill-icons">
+          <div class="sic"><i class="devicon-c-plain colored"></i><span>C</span></div>
+          <div class="sic"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+          <div class="sic"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+          <div class="sic"><i class="devicon-cplusplus-plain colored"></i><span>OOP</span></div>
+          <div class="sic"><i class="devicon-network-plain colored"></i><span>DSA</span></div>
+        </div>
+      </div>
+
+      <!-- 3. AI & Data -->
+      <div class="fade-up">
+        <div class="scat-title">AI, ML & Research</div>
+        <div class="skill-icons">
+          <div class="sic"><i class="devicon-jupyter-plain colored"></i><span>Jupyter</span></div>
+          <div class="sic"><i class="devicon-kaggle-original colored"></i><span>Kaggle</span></div>
+          <div class="sic"><i class="devicon-opencv-plain colored"></i><span>ML</span></div>
+          <div class="sic"><i class="devicon-pytorch-original colored"></i><span>LLM</span></div>
+          <div class="sic"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>PartyRock</span></div>
+        </div>
+      </div>
+
+      <!-- 4. Backend -->
+      <div class="fade-up">
+        <div class="scat-title">Backend & Storage</div>
+        <div class="skill-icons">
+          <div class="sic"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+          <div class="sic"><i class="devicon-postgresql-plain colored"></i><span>Postgres</span></div>
+          <div class="sic"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <p class="label">Let's Connect</p>
+    <h2 class="h2">Get In <span>Touch</span></h2>
+    <div class="contact-grid">
+      <div class="fade-up">
+        <p class="contact-blurb">Whether you have a project in mind, want to collaborate, or just want to say hi — my inbox is always open. I'll get back to you as soon as possible!</p>
+        <div class="contact-list">
+          <a class="contact-link" href="mailto:dilishasapkota0709@gmail.com"><div class="cl-icon">📧</div>dilishasapkota0709@gmail.com</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/dilisha-sapkota-002042317/" target="_blank"><div class="cl-icon">💼</div>LinkedIn Profile</a>
+          <a class="contact-link" href="https://github.com/Dilishaa108" target="_blank">
+            <div class="cl-icon"><svg style="width:17px;height:17px;fill:currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.38 9.38 0 0112 7.36c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg></div>
+            GitHub
+          </a>
+          <a class="contact-link" href="tel:+977-9840834900"><div class="cl-icon">📞</div>+977 9840834900</a>
+        </div>
+      </div>
+      <div class="form fade-up">
+        <div class="fg"><label>Your Name</label><input type="text" id="fn" placeholder="Your Name"/></div>
+        <div class="fg"><label>Email</label><input type="email" id="fe" placeholder="example@gmail.com"/></div>
+        <div class="fg"><label>Subject</label><input type="text" id="fs" placeholder="Project collaboration"/></div>
+        <div class="fg"><label>Message</label><textarea id="fm" placeholder="Hey! I'd love to work with you on..."></textarea></div>
+        <div class="form-ok" id="form-ok">✓ Message sent! I'll get back to you soon.</div>
+        <button class="btn btn-solid" style="align-self:flex-start" onclick="sendMsg()">
+          Send Message
+          <svg class="ico" viewBox="0 0 24 24" style="fill:white"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Designed & coded by <a href="#hero">Dilisha Sapkota</a> · 2026</p>
+    <p style="margin-top:6px;opacity:.4;font-size:12px">Made in Nepal</p>
+  </div>
+</footer>
+
+<!-- Certificate Modal -->
+<div class="modal-bg" id="certModal" onclick="closeModalBg(event)">
+  <button class="modal-close" onclick="document.getElementById('certModal').classList.remove('open')">✕</button>
+  <div class="modal-box">
+    <img class="modal-img" id="modal-img" src="" alt="Certificate"/>
+  </div>
+</div>
+
+<script>
+const ROLES=["High School Graduate","Problem Solver","Quick Learner","Computer Engineering Student"];
+let ri=0,ci=0,del=false;
+function type(){
+  const el=document.getElementById('typed'),w=ROLES[ri];
+  if(!del){el.textContent=w.slice(0,++ci);if(ci===w.length){del=true;setTimeout(type,2000);return}}
+  else{el.textContent=w.slice(0,--ci);if(ci===0){del=false;ri=(ri+1)%ROLES.length}}
+  setTimeout(type,del?55:85);
+}
+type();
+
+function toggleMob(){document.getElementById('mob').classList.toggle('show')}
+
+function switchTab(id,btn){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');btn.classList.add('active');
+}
+
+function switchCertTab(id,btn){
+  document.querySelectorAll('.cert-tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.cert-tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');btn.classList.add('active');
+}
+
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')})},{threshold:.1});
+document.querySelectorAll('.tl-item,.fade-up').forEach(el=>obs.observe(el));
+
+const secs=document.querySelectorAll('section[id]');
+const navAs=document.querySelectorAll('.links a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-100)cur=s.id});
+  navAs.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
+});
+
+function openCertModal(src){
+  const img=document.getElementById('modal-img');
+  img.src=src;
+  img.onerror=()=>{img.alt='Image not found'};
+  document.getElementById('certModal').classList.add('open');
+}
+function closeModalBg(e){if(e.target===document.getElementById('certModal'))document.getElementById('certModal').classList.remove('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('certModal').classList.remove('open')});
+
+function sendMsg(){
+  const n=document.getElementById('fn').value.trim();
+  const e=document.getElementById('fe').value.trim();
+  const s=document.getElementById('fs').value.trim();
+  const m=document.getElementById('fm').value.trim();
+  if(!n||!e||!m){alert('Please fill in all required fields.');return;}
+  window.location.href=`mailto:dilishasapkota0709@gmail.com?subject=${encodeURIComponent(s||'Portfolio contact from '+n)}&body=${encodeURIComponent(m+'\n\nFrom: '+n+'\nReply to: '+e)}`;
+  document.getElementById('form-ok').style.display='block';
+}
+</script>
+</body>
+</html>
