@@ -204,8 +204,95 @@
   </div>
 </section>
 
-<!-- PROJECTS SECTION -->
-<div id="projects" style="scroll-margin-top:80px; width: 100%; padding-left: 25px;">
+<!-- PORTFOLIO CARD SECTION -->
+<section id="portfolio" style="text-align: center; padding: 100px 0;">
+  <div class="wrap">
+    <p class="label" style="text-transform: uppercase; letter-spacing: 2px;">Explore My Work</p>
+    <h1 class="h1" style="font-size: 3.5rem; margin-bottom: 10px;">Portfolio <span>Showcase</span></h1>
+    <p style="max-width: 700px; margin: 0 auto 50px; color: #888; line-height: 1.6;">
+      Explore my journey through projects, certifications, and technical expertise.
+      Each section represents a milestone in my continuous learning path.
+    </p>
+
+    <style>
+      .portfolio-cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+      .pf-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 40px 30px;
+        width: 320px;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .pf-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.06);
+        border-color: var(--accent); /* Uses your theme color */
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      }
+      .pf-img {
+        width: 100px; /* Big icons like the first image */
+        height: 100px;
+        margin-bottom: 25px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
+      }
+      .pf-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 15px;
+      }
+      .pf-desc {
+        font-size: 0.95rem;
+        color: #aaa;
+        line-height: 1.5;
+      }
+    </style>
+
+    <!-- 3 HORIZONTAL CARDS -->
+    <div class="portfolio-cards">
+
+      <!-- Card 1: Projects -->
+      <a class="pf-card" href="#projects">
+        <img src="project.jpg" alt="Projects" class="pf-img">
+        <div class="pf-title">Projects</div>
+        <div class="pf-desc"> Explore my hands-on projects in cybersecurity, ethical hacking, networking,
+    programming, and web development.</div>
+      </a>
+
+      <!-- Card 2: Certificates -->
+      <a class="pf-card" href="#certificates">
+        <img src="certificate.jpg" alt="Certificates" class="pf-img">
+        <div class="pf-title">Certificates</div>
+        <div class="pf-desc"> A collection of certifications, workshops, and achievements reflecting my
+    continuous learning in cybersecurity, networking, and professional development.</div>
+      </a>
+
+      <!-- Card 3: Tech Stack -->
+      <a class="pf-card" href="#tech-stack">
+        <img src="techstack.jpg" alt="Tech Stack" class="pf-img">
+        <div class="pf-title">Tech Stack</div>
+        <div class="pf-desc">Discover the programming languages, security tools, frameworks, and technologies
+    I use to build, analyze, and explore cybersecurity solutions.</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION --> 
+<div id="projects" style="scroll-margin-top:80px; width: 100%; padding-left: 220px;">
 
   <p class="label">What I've Built</p>
   <h2 class="h2">My <span>Projects</span></h2>
@@ -387,12 +474,13 @@
 
   </div>
 </div>
+
     <!-- CERTIFICATES SECTION — 3 categories: Technical & Cybersecurity, Professional Development and Recognition & Activities -->
    <div id="certificates" style="scroll-margin-top:80px; width: 100%; padding-left: 25px;">
         <!-- Added 25px padding-left to give that '2 to 3 spaces' look without changing the layout -->
-        
+        <br>
         <p class="label">Achievements</p>
-        <h2 class="h2">My <span>Certificatess</span></h2>
+        <h2 class="h2">My <span>Certificates</span></h2>
       
       <!-- 3 CATEGORY TABS -->
       <div class="cert-tabs">
