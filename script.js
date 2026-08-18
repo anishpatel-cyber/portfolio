@@ -1,4 +1,11 @@
-const ROLES=["High School Graduate","Problem Solver","Quick Learner","Computer Engineering Student"];
+const ROLES=[
+  "Cybersecurity Student",
+  "Aspiring Ethical Hacker",
+  "Digital Forensics Enthusiast",
+  "Cybersecurity Practitioner",
+  "Problem Solver",
+  "Continuous Learner"
+];
 let ri=0,ci=0,del=false;
 function type(){
   const el=document.getElementById('typed'),w=ROLES[ri];
@@ -48,6 +55,6 @@ function sendMsg(){
   const s=document.getElementById('fs').value.trim();
   const m=document.getElementById('fm').value.trim();
   if(!n||!e||!m){alert('Please fill in all required fields.');return;}
-  window.location.href=`mailto:dilishasapkota0709@gmail.com?subject=${encodeURIComponent(s||'Portfolio contact from '+n)}&body=${encodeURIComponent(m+'\n\nFrom: '+n+'\nReply to: '+e)}`;
+  window.location.href=`mailto:anishpatel.cyber@gmail.com?subject=${encodeURIComponent(s||'Portfolio contact from '+n)}&body=${encodeURIComponent(m+'\n\nFrom: '+n+'\nReply to: '+e)}`;
   document.getElementById('form-ok').style.display='block';
 }
