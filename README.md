@@ -5,9 +5,7 @@ technical skills, projects, certifications, and professional interests.
 
 ## 🌐 Live Portfolio
 
-<a href="https://anishkumarpatel.netlify.app/" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-2563EB?style=for-the-badge&logo=netlify&logoColor=white" alt="Visit My Portfolio"/>
-</a>
+<a href="https://anishkumarpatel.netlify.app/" target="_blank" rel="noopener noreferrer">Visit My Portfolio</a>
 
 ## 👨‍💻 About
 
