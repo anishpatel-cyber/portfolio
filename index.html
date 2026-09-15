@@ -22,10 +22,10 @@
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="ham" onclick="toggleMob()"><span></span><span></span><span></span></div>
+    <button class="ham" type="button" aria-label="Open navigation menu" aria-controls="mob" aria-expanded="false" onclick="toggleMob()"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<div class="mob" id="mob">
+<div class="mob" id="mob" aria-label="Mobile navigation">
   <a href="#about" onclick="toggleMob()">About</a>
   <a href="#journey" onclick="toggleMob()">Journey</a>
   <a href="#portfolio" onclick="toggleMob()">Portfolio</a>
@@ -702,7 +702,7 @@
     <div class="skills-cats">
       <!-- 1. CyberSecurity -->
       <div class="fade-up">
-        <div class="scat-title">🔐 Cybersecurity</div>
+        <div class="scat-title" style="color:#c4b5fd">🔐 Cybersecurity</div>
         <div class="skill-icons">
           <div class="sic"><img src="images/TechStack/kali--linux.png" alt="Kali Linux"></i><span>Kali Linux</span></div>
           <div class="sic"><img src="images/TechStack/burpsuite.webp" alt="Burpsuite"></i><span>Burpsuite</span></div>
@@ -713,7 +713,7 @@
 
       <!-- 2. Programming -->
       <div class="fade-up">
-        <div class="scat-title">💻 Programming</div>
+        <div class="scat-title" style="color:#c4b5fd">💻 Programming</div>
         <div class="skill-icons">
           <div class="sic"><i class="devicon-c-plain colored"></i><span>C</span></div>
           <div class="sic"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
@@ -726,7 +726,7 @@
 
       <!-- 3. 🌐 Networking -->
       <div class="fade-up">
-        <div class="scat-title">🌐 Networking</div>
+        <div class="scat-title" style="color:#c4b5fd">🌐 Networking</div>
         <div class="skill-icons">
           <div class="sic"><img src="images/TechStack/tcp-ip.jpg" alt="TCP/IP"></i><span>TCP/IP</span></div>
           <div class="sic"><img src="images/TechStack/cisco.png" alt="Cisco Packet Tracer"></i><span>Cisco Packet Tracer</span></div>
@@ -739,7 +739,7 @@
 
       <!-- 4. 🛠️ Development & Frameworks -->
       <div class="fade-up">
-        <div class="scat-title">🛠️ Development & Frameworks</div>
+        <div class="scat-title" style="color:#c4b5fd">🛠️ Development & Frameworks</div>
         <div class="skill-icons">
           <div class="sic"><img src="images/TechStack/react.png" alt="React"></i><span>React</span></div>
           <div class="sic"><img src="images/TechStack/fastapi.png" alt="FastAPI"></i><span>FastAPI</span></div>
@@ -753,7 +753,7 @@
 
   <!-- 4. 🤖 AI & Emerging Tech -->
       <div class="fade-up">
-        <div class="scat-title">🤖 AI & Emerging Tech</div>
+        <div class="scat-title" style="color:#c4b5fd">🤖 AI & Emerging Tech</div>
         <div class="skill-icons">
           <div class="sic"><img src="images/TechStack/ai.png" alt="Generative AI"></i><span>Generative AI</span></div>
           <div class="sic"><img src="images/TechStack/prompt.png" alt="Prompt Engineering"></i><span>Prompt Engineering</span></div>
@@ -783,10 +783,10 @@
         </div>
       </div>
       <div class="form fade-up">
-        <div class="fg"><label>Your Name</label><input type="text" id="fn" placeholder="Your Name"/></div>
-        <div class="fg"><label>Email</label><input type="email" id="fe" placeholder="example@gmail.com"/></div>
-        <div class="fg"><label>Subject</label><input type="text" id="fs" placeholder="Project collaboration"/></div>
-        <div class="fg"><label>Message</label><textarea id="fm" placeholder="Hey! I'd love to work with you on..."></textarea></div>
+        <div class="fg"><label for="fn">Your Name</label><input type="text" id="fn" name="name" autocomplete="name" placeholder="Your Name"/></div>
+        <div class="fg"><label for="fe">Email</label><input type="email" id="fe" name="email" autocomplete="email" placeholder="example@gmail.com"/></div>
+        <div class="fg"><label for="fs">Subject</label><input type="text" id="fs" name="subject" placeholder="Project collaboration"/></div>
+        <div class="fg"><label for="fm">Message</label><textarea id="fm" name="message" placeholder="Hey! I'd love to work with you on..."></textarea></div>
         <div class="form-ok" id="form-ok">✓ Message sent! I'll get back to you soon.</div>
         <button class="btn btn-solid" style="align-self:flex-start" onclick="sendMsg()">
           Send Message
@@ -805,9 +805,10 @@
 </footer>
 
 <!-- Certificate Modal -->
-<div class="modal-bg" id="certModal" onclick="closeModalBg(event)">
-  <button class="modal-close" onclick="document.getElementById('certModal').classList.remove('open')">✕</button>
+<div class="modal-bg" id="certModal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="closeModalBg(event)">
+  <button class="modal-close" type="button" aria-label="Close certificate preview" onclick="document.getElementById('certModal').classList.remove('open')">✕</button>
   <div class="modal-box">
+    <h2 id="modal-title" class="sr-only">Certificate preview</h2>
     <img class="modal-img" id="modal-img" src="" alt="Certificate"/>
   </div>
 </div>

@@ -15,7 +15,13 @@ function type(){
 }
 type();
 
-function toggleMob(){document.getElementById('mob').classList.toggle('show')}
+function toggleMob(){
+  const mob=document.getElementById('mob');
+  const button=document.querySelector('.ham');
+  const open=mob.classList.toggle('show');
+  button.setAttribute('aria-expanded',String(open));
+  button.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+}
 
 function switchTab(id,btn){
   document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
