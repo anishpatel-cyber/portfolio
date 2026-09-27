@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anishkumarpatel.netlify.app/sitemap.xml
